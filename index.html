@@ -3,578 +3,231 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="dark light" />
     <meta name="theme-color" content="#0b0d12" />
-    <title>IronPeak | Academia</title>
+    <title>SkyFit Academia</title>
     <meta
       name="description"
-      content="Academia com estrutura premium, treinos inteligentes e planos sem burocracia. Conheça modalidades, preços e unidades."
+      content="Home da SkyFit, um centro de treino com planos claros, espaços imersivos e atendimento humano."
     />
-
-    <link rel="icon" href="./assets/img/mark.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-
-    <header class="topbar">
-      <div class="container topbar__inner">
-        <div class="topbar__pill">
-          <span class="dot dot--ok" aria-hidden="true"></span>
-          <span>Treino grátis para conhecer</span>
-          <a class="topbar__link" href="#planos">Ver planos</a>
+    <header class="site-header" id="topo">
+      <div class="site-header__inner">
+        <div class="brand">
+          <span class="brand__shield"></span>
+          <div>
+            <strong>SKYFIT</strong>
+            <span>Academia</span>
+          </div>
         </div>
-        <div class="topbar__meta">
-          <a class="topbar__metaLink" href="tel:+5581999999999">+55 (81) 99999-9999</a>
-          <span class="topbar__sep" aria-hidden="true">•</span>
-          <a class="topbar__metaLink" href="#duvidas">Dúvidas</a>
-        </div>
-      </div>
-    </header>
-
-    <header class="header" data-header>
-      <div class="container header__inner">
-        <a class="brand" href="#inicio" aria-label="Ir para o início">
-          <img class="brand__mark" src="./assets/img/mark.svg" alt="" />
-          <span class="brand__text">
-            <strong>IRONPEAK</strong>
-            <small>Academia e Performance</small>
-          </span>
-        </a>
-
-        <button class="menuBtn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">
-          <span class="menuBtn__bars" aria-hidden="true"></span>
-          <span class="sr-only">Abrir menu</span>
-        </button>
-
-        <nav class="nav" id="menu" data-nav>
-          <a class="nav__link is-active" href="#inicio">Home</a>
-          <a class="nav__link" href="#unidades">Unidades</a>
-          <a class="nav__link" href="#planos">Planos</a>
-          <a class="nav__link" href="#modalidades">Modalidades</a>
-          <a class="nav__link" href="#na-midia">Na mídia</a>
-          <a class="nav__link" href="#duvidas">Dúvidas</a>
-          <a class="nav__link nav__link--ghost" href="#aluno">Área do aluno</a>
+        <nav class="main-nav">
+          <a href="#topo" class="active">Home</a>
+          <a href="#sobre">A Ironberg</a>
+          <a href="#unidades">Unidades</a>
+          <a href="#planos">Planos</a>
+          <a href="#midia">Na mídia</a>
+          <a href="#duvidas">Dúvidas</a>
+          <a href="#personais">Personais</a>
+          <a href="#contact">Trabalhe conosco</a>
+          <a href="#franquia">Seja um franqueado</a>
         </nav>
-
-        <div class="header__cta">
-          <a class="btn btn--primary" href="#visita">Agendar visita</a>
+        <div class="header-accent">
+          <span>Google</span>
         </div>
       </div>
     </header>
 
-    <main id="conteudo">
+    <main>
       <section class="hero" id="inicio">
-        <div class="hero__bg" aria-hidden="true">
-          <div class="hero__grid"></div>
-          <div class="hero__glow hero__glow--a"></div>
-          <div class="hero__glow hero__glow--b"></div>
-          <div class="hero__glow hero__glow--c"></div>
-        </div>
-
-        <div class="container hero__inner">
-          <div class="hero__copy reveal">
-            <p class="eyebrow">
-              <span class="eyebrow__tag">Alta performance</span>
-              <span class="eyebrow__muted">Estrutura premium e treino inteligente</span>
-            </p>
-            <h1 class="hero__title">
-              O ambiente que muda seu ritmo.
-              <span class="hero__titleStroke">De verdade.</span>
+        <div class="hero__background" aria-hidden="true"></div>
+        <div class="hero__content">
+          <div class="hero__text">
+            <p class="hero__eyebrow">O AMBIENTE TRANSFORMA!</p>
+            <h1>
+              O maior centro de treinamento do mundo!
             </h1>
-            <p class="hero__lead">
-              Um lugar feito para constância: equipamentos atuais, modalidades exclusivas e um time que te coloca em
-              movimento com clareza. Sem enrolação. Sem burocracia.
+            <p>
+              SkyFit conecta treino funcional, studios de dança e tecnologia para dar consistência ao seu resultado.
+              Ambiente com luz, música e equipamentos ajustados ao seu ritmo.
             </p>
             <div class="hero__actions">
-              <a class="btn btn--primary" href="#planos">Ver planos</a>
-              <a class="btn btn--soft" href="#modalidades">Explorar espaços</a>
-            </div>
-
-            <div class="hero__stats" aria-label="Estatísticas">
-              <div class="stat">
-                <div class="stat__num">24/7</div>
-                <div class="stat__label">Acesso com controle</div>
-              </div>
-              <div class="stat">
-                <div class="stat__num">+40</div>
-                <div class="stat__label">Aulas e horários</div>
-              </div>
-              <div class="stat">
-                <div class="stat__num">0</div>
-                <div class="stat__label">Taxa de adesão</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero__panel reveal">
-            <div class="panel">
-              <div class="panel__top">
-                <span class="panel__kicker">COMECE HOJE</span>
-                <span class="chip">
-                  <span class="chip__dot" aria-hidden="true"></span>
-                  Vagas limitadas
-                </span>
-              </div>
-              <h2 class="panel__title">Treino grátis para conhecer a IronPeak</h2>
-              <p class="panel__text">
-                Faça uma visita guiada, descubra o melhor plano e saia com um treino montado em 15 minutos.
-              </p>
-
-              <form class="panel__form" id="visita" data-lead-form>
-                <label class="field">
-                  <span class="field__label">Seu nome</span>
-                  <input class="field__input" name="nome" autocomplete="name" placeholder="Ex: Mariana" required />
-                </label>
-
-                <label class="field">
-                  <span class="field__label">WhatsApp</span>
-                  <input
-                    class="field__input"
-                    name="whats"
-                    inputmode="tel"
-                    autocomplete="tel"
-                    placeholder="(81) 99999-9999"
-                    required
-                  />
-                </label>
-
-                <label class="field">
-                  <span class="field__label">Unidade</span>
-                  <select class="field__input" name="unidade" required>
-                    <option value="" selected disabled>Escolha uma unidade</option>
-                    <option>Centro</option>
-                    <option>Zona Norte</option>
-                    <option>Zona Sul</option>
-                  </select>
-                </label>
-
-                <button class="btn btn--primary btn--full" type="submit">Agendar visita</button>
-                <p class="panel__fineprint">
-                  Ao enviar, você concorda em receber contato sobre sua visita. Sem spam.
-                </p>
-              </form>
-            </div>
-
-            <div class="hero__miniCards">
-              <article class="miniCard">
-                <div class="miniCard__icon" aria-hidden="true">
-                  <img src="./assets/img/icon-bolt.svg" alt="" />
-                </div>
-                <div class="miniCard__copy">
-                  <strong>Progressão guiada</strong>
-                  <span>Treino evolui com você.</span>
-                </div>
-              </article>
-              <article class="miniCard">
-                <div class="miniCard__icon" aria-hidden="true">
-                  <img src="./assets/img/icon-shield.svg" alt="" />
-                </div>
-                <div class="miniCard__copy">
-                  <strong>Sem fidelidade</strong>
-                  <span>Fica porque funciona.</span>
-                </div>
-              </article>
+              <button class="primary">FAÇA PARTE</button>
+              <button>UNIDADES</button>
+              <button>PLANOS</button>
+              <button>AULA AVULSA</button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section--tight" id="unidades">
-        <div class="container">
-          <div class="section__head reveal">
-            <div>
-              <p class="eyebrow eyebrow--dark">UNIDADES</p>
-              <h2 class="section__title">Perto de você. Pronta para você.</h2>
+      <section class="plans" id="planos">
+        <div class="section-heading">
+          <h2>Conheça os planos!</h2>
+          <p>Escolha o ritmo ideal entre mensal, anual e conteúdos exclusivos.</p>
+        </div>
+        <div class="plan-grid">
+          <article class="plan-card">
+            <div class="plan-card__badge">Sky Recorrente</div>
+            <h3>SKY</h3>
+            <p>RECORRENTE</p>
+            <ul>
+              <li>Avaliação física trimestral</li>
+              <li>Treino personalizado</li>
+              <li>Aulas coletivas</li>
+              <li>Acesso livre a todas as modalidades</li>
+              <li>Estacionamento gratuito</li>
+              <li>SkyDance, SkyBox, SkyCardio</li>
+              <li>Treine em todas as academias participantes (consulte)</li>
+            </ul>
+            <div class="plan-card__price">
+              <span class="muted">de R$229,90</span>
+              <strong>R$129,90</strong>
             </div>
-            <a class="linkArrow" href="#visita">
-              Agendar visita
-              <span aria-hidden="true">→</span>
-            </a>
-          </div>
+            <button>Assinar Sky Recorrente</button>
+            <p class="muted small">Consulte a academia participante.</p>
+          </article>
 
-          <div class="grid grid--3">
-            <article class="unitCard reveal">
-              <div class="unitCard__media unitCard__media--a" aria-hidden="true"></div>
-              <div class="unitCard__body">
-                <h3>Centro</h3>
-                <p>Treino completo, área de cardio ampla, vestiários premium e lockers.</p>
-                <div class="unitCard__meta">
-                  <span class="pill">Seg a Dom</span>
-                  <span class="pill pill--soft">24h</span>
-                </div>
-              </div>
-            </article>
+          <article class="plan-card plan-card--highlight">
+            <div class="plan-card__badge plan-card__badge--white">Águia Anual</div>
+            <h3>ÁGUIA</h3>
+            <p>ANUAL</p>
+            <ul>
+              <li>Avaliação física trimestral</li>
+              <li>Treino personalizado</li>
+              <li>Aulas coletivas</li>
+              <li>Acesso livre</li>
+              <li>Estacionamento gratuito</li>
+              <li>SkyDance, SkyBox, SkyCardio</li>
+              <li>Treine em todas as academias participantes (consulte)</li>
+            </ul>
+            <div class="plan-card__price">
+              <span class="muted">de R$199,90</span>
+              <strong>R$109,90</strong>
+            </div>
+            <button class="primary">Assinar Águia Anual</button>
+            <p class="muted small">Consulte a academia participante.</p>
+          </article>
 
-            <article class="unitCard reveal">
-              <div class="unitCard__media unitCard__media--b" aria-hidden="true"></div>
-              <div class="unitCard__body">
-                <h3>Zona Norte</h3>
-                <p>Espaço funcional, lutas, estúdio de bike e sala de alongamento guiado.</p>
-                <div class="unitCard__meta">
-                  <span class="pill">Estacionamento</span>
-                  <span class="pill pill--soft">Aulas</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="unitCard reveal">
-              <div class="unitCard__media unitCard__media--c" aria-hidden="true"></div>
-              <div class="unitCard__body">
-                <h3>Zona Sul</h3>
-                <p>Musculação premium, peso livre completo e zona de performance.</p>
-                <div class="unitCard__meta">
-                  <span class="pill">Personal</span>
-                  <span class="pill pill--soft">Avaliação</span>
-                </div>
-              </div>
-            </article>
-          </div>
+          <article class="plan-card">
+            <div class="plan-card__badge">Prime Mensal</div>
+            <h3>PRIME</h3>
+            <p>MENSAL</p>
+            <ul>
+              <li>Avaliação física trimestral</li>
+              <li>Aulas coletivas</li>
+              <li>Acesso livre a todas as modalidades</li>
+              <li>Estacionamento gratuito</li>
+              <li>SkyDance, SkyBox, SkyCardio</li>
+              <li>Treine em todas as academias participantes (consulte)</li>
+            </ul>
+            <div class="plan-card__price">
+              <span class="muted">de R$239,90</span>
+              <strong>R$149,90</strong>
+            </div>
+            <button>Assinar Prime Mensal</button>
+            <p class="muted small">Consulte a academia participante.</p>
+          </article>
         </div>
       </section>
 
-      <section class="section section--contrast" id="planos">
-        <div class="container">
-          <div class="section__head reveal">
-            <div>
-              <p class="eyebrow">PLANOS</p>
-              <h2 class="section__title">Planos que cabem no seu ritmo.</h2>
-              <p class="section__subtitle">
-                Troque de plano quando quiser. Sem taxa de adesão. Sem letra miúda.
-              </p>
+      <section class="spaces" id="unidades">
+        <div class="section-heading">
+          <h2>Conheça agora nossos espaços, treinos e aulas coletivas:</h2>
+        </div>
+        <div class="space-grid">
+          <article>
+            <div class="media media--one"></div>
+            <h3>MUSCULAÇÃO</h3>
+            <div class="tags">
+              <span>Intensidade Alta</span>
+              <span>Complexidade Baixa</span>
             </div>
-
-            <div class="toggle" data-billing-toggle>
-              <button class="toggle__btn is-active" type="button" data-billing="mensal">Mensal</button>
-              <button class="toggle__btn" type="button" data-billing="anual">Anual</button>
-              <span class="toggle__pill" aria-hidden="true"></span>
+            <p>A musculação é um tipo de exercício realizado com pesos de diversas cargas, amplitude e tempo de contração.</p>
+            <a href="#">Saiba mais, clique aqui</a>
+          </article>
+          <article>
+            <div class="media media--two"></div>
+            <h3>SKY DANCE</h3>
+            <div class="tags">
+              <span>Intensidade Alta</span>
+              <span>Complexidade Média</span>
             </div>
-          </div>
-
-          <div class="pricing">
-            <article class="priceCard reveal" data-plan="start">
-              <div class="priceCard__top">
-                <div>
-                  <h3 class="priceCard__name">START</h3>
-                  <p class="priceCard__desc">Para ganhar constância e base.</p>
-                </div>
-                <span class="badge badge--soft">Mais escolhido</span>
-              </div>
-              <div class="priceCard__price">
-                <div class="priceCard__from">de <span data-from>R$ 189,90</span></div>
-                <div class="priceCard__now"><span data-price>R$ 129,90</span><small>/mês</small></div>
-              </div>
-              <ul class="checklist">
-                <li>Acesso musculação + cardio</li>
-                <li>Aulas coletivas selecionadas</li>
-                <li>Avaliação física trimestral</li>
-                <li>App com treino e evolução</li>
-              </ul>
-              <a class="btn btn--soft btn--full" href="#visita">Assinar Start</a>
-              <p class="priceCard__note">Ideal para quem quer começar forte.</p>
-            </article>
-
-            <article class="priceCard priceCard--featured reveal" data-plan="peak">
-              <div class="ribbon" aria-hidden="true">MELHOR CUSTO</div>
-              <div class="priceCard__top">
-                <div>
-                  <h3 class="priceCard__name">PEAK</h3>
-                  <p class="priceCard__desc">Treine sem limites, com prioridade.</p>
-                </div>
-                <span class="badge">Premium</span>
-              </div>
-              <div class="priceCard__price">
-                <div class="priceCard__from">de <span data-from>R$ 239,90</span></div>
-                <div class="priceCard__now"><span data-price>R$ 149,90</span><small>/mês</small></div>
-              </div>
-              <ul class="checklist">
-                <li>Todas as modalidades</li>
-                <li>Acesso a todas as unidades</li>
-                <li>Treino de força e mobilidade</li>
-                <li>Convide 1 amigo 1x/mês</li>
-              </ul>
-              <a class="btn btn--primary btn--full" href="#visita">Assinar Peak</a>
-              <p class="priceCard__note">Para quem quer performance e rotina.</p>
-            </article>
-
-            <article class="priceCard reveal" data-plan="pro">
-              <div class="priceCard__top">
-                <div>
-                  <h3 class="priceCard__name">PRO</h3>
-                  <p class="priceCard__desc">Para quem precisa de acompanhamento.</p>
-                </div>
-                <span class="badge badge--soft">Personal</span>
-              </div>
-              <div class="priceCard__price">
-                <div class="priceCard__from">de <span data-from>R$ 329,90</span></div>
-                <div class="priceCard__now"><span data-price>R$ 219,90</span><small>/mês</small></div>
-              </div>
-              <ul class="checklist">
-                <li>2 treinos guiados/semana</li>
-                <li>Avaliação mensal</li>
-                <li>Periodização por objetivo</li>
-                <li>Suporte via WhatsApp</li>
-              </ul>
-              <a class="btn btn--soft btn--full" href="#visita">Assinar Pro</a>
-              <p class="priceCard__note">Para acelerar evolução com segurança.</p>
-            </article>
-          </div>
-
-          <div class="callout reveal">
-            <div class="callout__copy">
-              <strong>Surpresa:</strong> um mini-plano em 20 segundos. Diga seu objetivo e a gente sugere o caminho.
+            <p>Espaço para aulas coletivas como Zumba, Jump, Pump, Step, Ritmos, FitDance, Pilates e Functional.</p>
+            <a href="#">Saiba mais, clique aqui</a>
+          </article>
+          <article>
+            <div class="media media--three"></div>
+            <h3>SKY CARDIO</h3>
+            <div class="tags">
+              <span>Intensidade Moderada</span>
+              <span>Complexidade Baixa</span>
             </div>
-            <a class="btn btn--soft" href="#simulador">Abrir simulador</a>
-          </div>
+            <p>Exercícios cardio trabalham respiração e circulação, perfeitos para quem busca resistência.</p>
+            <a href="#">Saiba mais, clique aqui</a>
+          </article>
+          <article>
+            <div class="media media--four"></div>
+            <h3>SKY BOX</h3>
+            <div class="tags">
+              <span>Intensidade Alta</span>
+              <span>Complexidade Baixa</span>
+            </div>
+            <p>Área com movimentos naturais do corpo: pular, correr, puxar, agachar, girar e empurrar.</p>
+            <a href="#">Saiba mais, clique aqui</a>
+          </article>
         </div>
       </section>
 
-      <section class="section" id="modalidades">
-        <div class="container">
-          <div class="section__head reveal">
-            <div>
-              <p class="eyebrow eyebrow--dark">ESPAÇOS E AULAS</p>
-              <h2 class="section__title">Ambientes que puxam você pra ação.</h2>
-              <p class="section__subtitle section__subtitle--dark">
-                Cada área foi pensada para reduzir fricção e aumentar constância: o treino fica mais simples de manter.
-              </p>
-            </div>
-          </div>
+      <section class="why" id="sobre">
+        <div class="why__text">
+          <h2>Por que a Selfit é diferente?</h2>
+          <p>Acreditamos que o exercício é para todos! Por isso, proporcionamos a melhor infraestrutura, equipamentos de última geração e professores altamente qualificados para que cada aluno alcance sua melhor versão.</p>
+          <p><strong>Fidelidade e adesão ZERO.</strong> Você começa porque é diferente e fica porque funciona! Não cobramos nada pela adesão.</p>
+          <p><strong>Modalidades exclusivas.</strong> Espaços planejados para promover mobilidade, perder peso e ganhar massa magra.</p>
+        </div>
+        <div class="why__image" aria-hidden="true"></div>
+      </section>
 
-          <div class="featureGrid">
-            <article class="featureCard reveal">
-              <div class="featureCard__media featureCard__media--strength" aria-hidden="true"></div>
-              <div class="featureCard__body">
-                <h3>Musculação</h3>
-                <p>Zona de força com progressão clara, pesos livres completos e máquinas atuais.</p>
-                <div class="featureCard__tags">
-                  <span class="pill">Intensidade alta</span>
-                  <span class="pill pill--soft">Técnica</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="featureCard reveal">
-              <div class="featureCard__media featureCard__media--dance" aria-hidden="true"></div>
-              <div class="featureCard__body">
-                <h3>Studio</h3>
-                <p>Aulas coletivas com energia, coreografias e treinos funcionais guiados.</p>
-                <div class="featureCard__tags">
-                  <span class="pill">Cardio</span>
-                  <span class="pill pill--soft">Clima</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="featureCard reveal">
-              <div class="featureCard__media featureCard__media--cardio" aria-hidden="true"></div>
-              <div class="featureCard__body">
-                <h3>Cardio</h3>
-                <p>Esteiras, bikes e remos em uma área que te dá foco e ritmo sem lotação.</p>
-                <div class="featureCard__tags">
-                  <span class="pill">Moderada</span>
-                  <span class="pill pill--soft">Resistência</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="featureCard reveal">
-              <div class="featureCard__media featureCard__media--combat" aria-hidden="true"></div>
-              <div class="featureCard__body">
-                <h3>Fight</h3>
-                <p>Boxe e HIIT com rounds, técnica e variação para acelerar condicionamento.</p>
-                <div class="featureCard__tags">
-                  <span class="pill">Alta</span>
-                  <span class="pill pill--soft">Explosão</span>
-                </div>
-              </div>
-            </article>
-          </div>
+      <section class="testimonials" id="personais">
+        <h2>O que os nossos alunos estão dizendo?</h2>
+        <div class="testimonial-grid">
+          <article>
+            <p class="quote">"Academia muito boa, com profissionais muito competentes!"</p>
+            <footer>
+              <strong>Milton Deiró Neto</strong>
+              <span>Selfit Academias Caminho das Árvores</span>
+            </footer>
+          </article>
+          <article>
+            <p class="quote">"Espaço amplo e profissionais qualificados para atendimento ao público."</p>
+            <footer>
+              <strong>Samuel Decor</strong>
+              <span>Selfit Academias It Center</span>
+            </footer>
+          </article>
+          <article>
+            <p class="quote">"Academia ampla, bons aparelhos, excelente atendimento da líder Dayze e da técnica Raquel."</p>
+            <footer>
+              <strong>Raquel Sampaio</strong>
+              <span>Selfit Academias Olaria</span>
+            </footer>
+          </article>
         </div>
       </section>
 
-      <section class="section section--split" id="simulador">
-        <div class="container split">
-          <div class="split__copy reveal">
-            <p class="eyebrow">SIMULADOR</p>
-            <h2 class="section__title">Seu objetivo, nosso caminho.</h2>
-            <p class="section__subtitle">
-              Escolha um foco e o tempo que você tem por treino. A IronPeak sugere um plano e uma combinação de espaços.
-            </p>
-            <div class="sim">
-              <label class="field">
-                <span class="field__label">Objetivo</span>
-                <select class="field__input" data-goal>
-                  <option value="forca">Ganhar força</option>
-                  <option value="emagrecer">Emagrecer</option>
-                  <option value="condicionamento">Condicionamento</option>
-                  <option value="mobilidade">Mobilidade</option>
-                </select>
-              </label>
-              <label class="field">
-                <span class="field__label">Tempo por treino</span>
-                <select class="field__input" data-time>
-                  <option value="40">40 min</option>
-                  <option value="60" selected>60 min</option>
-                  <option value="80">80 min</option>
-                </select>
-              </label>
-              <button class="btn btn--primary" type="button" data-simulate>Gerar recomendação</button>
-            </div>
-          </div>
-
-          <aside class="split__card reveal" aria-live="polite">
-            <div class="result" data-result>
-              <div class="result__top">
-                <span class="badge badge--soft">Recomendação</span>
-                <span class="result__meta" data-result-meta>Baseado em: 60 min</span>
-              </div>
-              <h3 class="result__title" data-result-title>Plano Peak</h3>
-              <p class="result__text" data-result-text>
-                Para equilibrar força e constância, com acesso total e variedade de modalidades.
-              </p>
-              <div class="result__grid">
-                <div class="result__item">
-                  <span class="result__k">Foco</span>
-                  <span class="result__v" data-result-focus>Força</span>
-                </div>
-                <div class="result__item">
-                  <span class="result__k">Treino</span>
-                  <span class="result__v" data-result-split>Força + Mobilidade</span>
-                </div>
-                <div class="result__item">
-                  <span class="result__k">Aulas</span>
-                  <span class="result__v" data-result-classes>2x/semana</span>
-                </div>
-                <div class="result__item">
-                  <span class="result__k">Evolução</span>
-                  <span class="result__v" data-result-track>App + Avaliação</span>
-                </div>
-              </div>
-              <a class="btn btn--soft btn--full" href="#visita">Quero testar grátis</a>
-            </div>
-          </aside>
+      <section class="cta" id="contact">
+        <div>
+          <p>Consulte dúvidas, agende avaliação ou conheça novas unidades.</p>
         </div>
+        <button>Falar com um especialista</button>
       </section>
 
-      <section class="section section--contrast" id="na-midia">
-        <div class="container">
-          <div class="section__head reveal">
-            <div>
-              <p class="eyebrow">NA MÍDIA</p>
-              <h2 class="section__title">O que falam sobre a IronPeak</h2>
-              <p class="section__subtitle">Textos fictícios para você trocar pelos seus destaques reais.</p>
-            </div>
-          </div>
-
-          <div class="press">
-            <article class="pressCard reveal">
-              <p class="pressCard__quote">
-                “Um novo padrão de academia: fluxo inteligente, estética forte e treino que dá vontade de voltar.”
-              </p>
-              <div class="pressCard__source">Revista Movimento</div>
-            </article>
-            <article class="pressCard reveal">
-              <p class="pressCard__quote">“O melhor é a simplicidade: entrou, treinou, evoluiu. Sem burocracia.”</p>
-              <div class="pressCard__source">Portal Saúde Agora</div>
-            </article>
-            <article class="pressCard reveal">
-              <p class="pressCard__quote">“Modalidades bem desenhadas e um time que não deixa você perdido.”</p>
-              <div class="pressCard__source">Jornal do Bairro</div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="duvidas">
-        <div class="container">
-          <div class="section__head reveal">
-            <div>
-              <p class="eyebrow eyebrow--dark">DÚVIDAS</p>
-              <h2 class="section__title">Perguntas rápidas.</h2>
-              <p class="section__subtitle section__subtitle--dark">Respostas diretas, sem enrolação.</p>
-            </div>
-          </div>
-
-          <div class="faq" data-faq>
-            <details class="faqItem reveal">
-              <summary>Tem taxa de adesão?</summary>
-              <p>Não. Você começa pelo plano e pronto. Se quiser trocar, troca.</p>
-            </details>
-            <details class="faqItem reveal">
-              <summary>Posso cancelar quando quiser?</summary>
-              <p>Sim. Sem fidelidade. A ideia é você ficar porque está funcionando.</p>
-            </details>
-            <details class="faqItem reveal">
-              <summary>Como funciona o treino grátis?</summary>
-              <p>Você agenda a visita, conhece a unidade e faz um treino de experiência com orientação.</p>
-            </details>
-            <details class="faqItem reveal">
-              <summary>Tem personal?</summary>
-              <p>Sim. O plano Pro inclui acompanhamento e há opções avulsas.</p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--tight" id="aluno">
-        <div class="container">
-          <div class="aluno reveal">
-            <div class="aluno__copy">
-              <p class="eyebrow">ÁREA DO ALUNO</p>
-              <h2 class="section__title">Treino e evolução na palma da mão.</h2>
-              <p class="section__subtitle">
-                Acompanhe cargas, frequência e progresso. Troque seu treino e receba lembretes de aula.
-              </p>
-            </div>
-            <div class="aluno__actions">
-              <a class="btn btn--primary" href="#visita">Entrar</a>
-              <a class="btn btn--soft" href="#visita">Criar conta</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <footer class="footer" id="franquia">
+        <p>© 2026 SkyFit Academia • Todos os direitos reservados</p>
+      </footer>
     </main>
-
-    <footer class="footer">
-      <div class="container footer__grid">
-        <div class="footer__brand">
-          <a class="brand brand--footer" href="#inicio">
-            <img class="brand__mark" src="./assets/img/mark.svg" alt="" />
-            <span class="brand__text">
-              <strong>IRONPEAK</strong>
-              <small>Academia e Performance</small>
-            </span>
-          </a>
-          <p class="footer__muted">
-            Projeto demo. Substitua textos, unidades e contatos pelos dados reais.
-          </p>
-        </div>
-
-        <div class="footer__col">
-          <h3>Menu</h3>
-          <a href="#planos">Planos</a>
-          <a href="#modalidades">Modalidades</a>
-          <a href="#unidades">Unidades</a>
-          <a href="#duvidas">Dúvidas</a>
-        </div>
-
-        <div class="footer__col">
-          <h3>Contato</h3>
-          <a href="tel:+5581999999999">+55 (81) 99999-9999</a>
-          <a href="mailto:contato@ironpeak.com.br">contato@ironpeak.com.br</a>
-          <a href="#visita">Agendar visita</a>
-        </div>
-      </div>
-
-      <div class="container footer__bottom">
-        <span>© <span data-year></span> IronPeak. Todos os direitos reservados.</span>
-        <span class="footer__bottomSep" aria-hidden="true">•</span>
-        <a class="footer__bottomLink" href="#inicio">Voltar ao topo</a>
-      </div>
-    </footer>
 
     <script src="./assets/js/main.js" defer></script>
   </body>
 </html>
-
